@@ -1,0 +1,40 @@
+.header {
+    height: 95px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    z-index: 1;
+    .header-section {
+        .header__info {
+            height: 30px;
+            text-align: right;
+            border-bottom: 1px solid #EBEBEB;
+            margin-top: 5px;
+            .header__hotline,
+            .header__email {
+                margin-right: 30px;
+            }
+            .header__lang {
+                float: right;
+            }
+        }
+        .header__right {
+            margin-top: 10px;
+            .header__nav {
+                .header__menu {
+                    padding-left: 0;
+                    .header__item {
+                        margin-right: 30px;
+                        list-style: none;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+}

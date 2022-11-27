@@ -1,7 +1,144 @@
+.home-page {
+    .container {
+        .banner-section {
+            margin-top: 95px;
+            .banner__panel {
+                height: 600px;
+            }
+        }
 
+        .about-section {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .about {
+                &__info {
+                    button {
+                        width: 160px;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
 
-.home-page{
-    h1{
-        color: var(--primaryColor);
+        .service-section {
+            padding-top: 50px;
+            height: 528px;
+            background: url('/images/service_background.png');
+            .service__list {
+                .service__item {
+                    display: inline-block;
+                    width: 255px;
+                    height: 255px;
+                    position: relative;
+                    margin-right: 30px;
+                    &-desc {
+                        position: absolute;
+                        left: 20px;
+                        right: 0;
+                        top: 220px;
+                        padding: 5px;
+                        border-left: solid 5px #0467d5;
+                        &:hover {
+                            top: 210px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .feature-section {
+            background: url(/images/background_feature.svg);
+            background-position: center;
+            margin: 70px;
+        }
+
+        .project-section {
+            height: 503px;
+            background-image: url(/images/background_project_img.png);
+            background-position: center;
+            .project__title {
+                button {
+                    width: 255px;
+                }
+            }
+            .project__list {
+                .project__item {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .partner-section {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .partner__list {
+                .partner__item {
+                    display: inline-block;
+                    margin-right: 60px;
+                }
+            }
+        }
+
+        .evaluation-section {
+            height: 542px;
+            position: relative;
+            .evaluation__title {
+                margin-top: 60px;
+                margin-left: 128px;
+            }
+            .evaluation__background{
+                &-left{
+                    width: 60%;
+                    height: 100%;
+                    display: inline-block;
+                    background-image: url(/images/evaluation_background2.png);
+                    background-position: center;
+                }
+                &-right{
+                    width: 40%;
+                    height: 100%;
+                    display: inline-block;                    
+                    background-image: url(/images/evaluation_background1.png);
+                    background-position: center;
+                }
+            }
+            .evaluation__list{
+                position: absolute;
+                left: 128px;
+                top: 200px;
+                .evaluation__item{
+                    display: inline-block;
+                    width: 350px;
+                    height: 206px;
+                    padding: 20px;
+                    margin-right: 20px;
+                    &-partner{
+                        padding-left: 70px;
+                    }
+                }
+            }
+        }
+
+        .newsletter-section{
+            padding-left:128px;
+            padding-top: 30px;
+            .newsletter__list{
+                .newsletter__item{
+                    display: inline-block;
+                    width: 350px;
+                    height: 391px;
+                    margin-right: 20px;
+                    &-img{
+                        width: 350px;
+                        height: 240px;
+                    }
+                    &-title{
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
     }
 }

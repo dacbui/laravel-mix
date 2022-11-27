@@ -1,3 +1,116 @@
-.home-page h1 {
-  color: var(--primaryColor);
+.home-page .container .banner-section {
+  margin-top: 95px;
+}
+.home-page .container .banner-section .banner__panel {
+  height: 600px;
+}
+.home-page .container .about-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.home-page .container .about-section .about__info button {
+  width: 160px;
+  margin-top: 30px;
+}
+.home-page .container .service-section {
+  padding-top: 50px;
+  height: 528px;
+  background: url("/images/service_background.png");
+}
+.home-page .container .service-section .service__list .service__item {
+  display: inline-block;
+  width: 255px;
+  height: 255px;
+  position: relative;
+  margin-right: 30px;
+}
+.home-page .container .service-section .service__list .service__item-desc {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: 220px;
+  padding: 5px;
+  border-left: solid 5px #0467d5;
+}
+.home-page .container .service-section .service__list .service__item-desc:hover {
+  top: 210px;
+}
+.home-page .container .feature-section {
+  background: url(/images/background_feature.svg);
+  background-position: center;
+  margin: 70px;
+}
+.home-page .container .project-section {
+  height: 503px;
+  background-image: url(/images/background_project_img.png);
+  background-position: center;
+}
+.home-page .container .project-section .project__title button {
+  width: 255px;
+}
+.home-page .container .project-section .project__list .project__item {
+  display: inline-block;
+}
+.home-page .container .partner-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.home-page .container .partner-section .partner__list .partner__item {
+  display: inline-block;
+  margin-right: 60px;
+}
+.home-page .container .evaluation-section {
+  height: 542px;
+  position: relative;
+}
+.home-page .container .evaluation-section .evaluation__title {
+  margin-top: 60px;
+  margin-left: 128px;
+}
+.home-page .container .evaluation-section .evaluation__background-left {
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  background-image: url(/images/evaluation_background2.png);
+  background-position: center;
+}
+.home-page .container .evaluation-section .evaluation__background-right {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  background-image: url(/images/evaluation_background1.png);
+  background-position: center;
+}
+.home-page .container .evaluation-section .evaluation__list {
+  position: absolute;
+  left: 128px;
+  top: 200px;
+}
+.home-page .container .evaluation-section .evaluation__list .evaluation__item {
+  display: inline-block;
+  width: 350px;
+  height: 206px;
+  padding: 20px;
+  margin-right: 20px;
+}
+.home-page .container .evaluation-section .evaluation__list .evaluation__item-partner {
+  padding-left: 70px;
+}
+.home-page .container .newsletter-section {
+  padding-left: 128px;
+  padding-top: 30px;
+}
+.home-page .container .newsletter-section .newsletter__list .newsletter__item {
+  display: inline-block;
+  width: 350px;
+  height: 391px;
+  margin-right: 20px;
+}
+.home-page .container .newsletter-section .newsletter__list .newsletter__item-img {
+  width: 350px;
+  height: 240px;
+}
+.home-page .container .newsletter-section .newsletter__list .newsletter__item-title {
+  font-size: 16px;
+  font-weight: bold;
 }

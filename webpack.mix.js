@@ -17,6 +17,12 @@ mix.sass('resources/sass/vendor.scss', 'public/css');
 mix.sass('resources/sass/header.scss', 'public/css');
 mix.sass('resources/sass/footer.scss', 'public/css');
 mix.sass('resources/sass/home-page.scss', 'public/css');
+mix.copyDirectory('resources/images', 'public/images')
 if (mix.inProduction()) {
     mix.version();
 }
+mix.webpackConfig({
+    stats: {
+        children: true,
+    },
+});

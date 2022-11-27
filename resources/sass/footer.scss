@@ -1,0 +1,72 @@
+.footer{
+    height: 443px;
+    border-top: solid 10px #0467D5;
+    .footer-section{
+        margin-top: 20px;
+        a{
+            color: inherit;
+        }
+        .footer__information{
+            font-size: 12px;
+            &-contact{
+                span{
+                    margin-left: 20px;
+                }
+            }
+            &-connect{
+                &-item{
+                    display: inline-block;
+                }
+            }
+        }
+        .footer__link{
+            &-item{
+                display: inline-block;
+                margin-right: 20px;
+                vertical-align: top;
+                a{
+                    display: block;
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .footer__signup{
+            position: relative;
+            &-background{
+                height: 118px;
+                background-image: url(/images/footer_banner.png);
+                background-position: center;
+                p{
+                    z-index: 1;
+                }
+            }
+            &-image{
+                position: absolute;
+                width: 98px;
+                height: 98px;
+                top: 10px;
+                left: 10px;
+            }
+            &-company-name{
+                position: absolute;
+                left: 120px;
+                top: 5px;
+            }
+            &-form{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .footer-section-copyright{
+        margin-top: 10px;
+        font-size: 12px;
+        .copyright__policy{
+            span{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+   

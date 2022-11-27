@@ -1,1 +1,62 @@
-
+.footer {
+  height: 443px;
+  border-top: solid 10px #0467D5;
+}
+.footer .footer-section {
+  margin-top: 20px;
+}
+.footer .footer-section a {
+  color: inherit;
+}
+.footer .footer-section .footer__information {
+  font-size: 12px;
+}
+.footer .footer-section .footer__information-contact span {
+  margin-left: 20px;
+}
+.footer .footer-section .footer__information-connect-item {
+  display: inline-block;
+}
+.footer .footer-section .footer__link-item {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+.footer .footer-section .footer__link-item a {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.footer .footer-section .footer__signup {
+  position: relative;
+}
+.footer .footer-section .footer__signup-background {
+  height: 118px;
+  background-image: url(/images/footer_banner.png);
+  background-position: center;
+}
+.footer .footer-section .footer__signup-background p {
+  z-index: 1;
+}
+.footer .footer-section .footer__signup-image {
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  top: 10px;
+  left: 10px;
+}
+.footer .footer-section .footer__signup-company-name {
+  position: absolute;
+  left: 120px;
+  top: 5px;
+}
+.footer .footer-section .footer__signup-form {
+  margin-top: 20px;
+}
+.footer .footer-section-copyright {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.footer .footer-section-copyright .copyright__policy span {
+  margin-right: 10px;
+}

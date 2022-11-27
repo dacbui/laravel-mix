@@ -1,23 +1,45 @@
+@charset "UTF-8";
+html {
+  font-size: 14px;
+}
+
 @font-face {
   font-family: "OpenSans";
-  src: url(/fonts/open-sans-v29-vietnamese-regular.eot?fd912b4ae7285617e43a984c843afdd2?#iefix) format("embedded-opentype"), url(/fonts/open-sans-v29-vietnamese-regular.woff?05204f21770592e72eae888fbdc33ee1) format("woff"), url(/fonts/open-sans-v29-vietnamese-regular.ttf?967e51c14bb28bc2cb53fd96d7c61abb) format("truetype"), url(/fonts/open-sans-v29-vietnamese-regular.svg?a9aff17ee65c2d3dd7a9f91e32d0b49c#OpenSans) format("svg");
+  src: url(/fonts/open-sans-v29-vietnamese-regular.eot?fd912b4ae7285617e43a984c843afdd2?#iefix) format("embedded-opentype"), url(/fonts/open-sans-v29-vietnamese-regular.woff?05204f21770592e72eae888fbdc33ee1) format("woff"), url(/fonts/open-sans-v29-vietnamese-regular.ttf?967e51c14bb28bc2cb53fd96d7c61abb) format("truetype"), url(/fonts/open-sans-v29-vietnamese-regular.svg?6f59f9057aa3c94b2b2362e538381663#OpenSans) format("svg");
 }
 :root {
   font-family: "OpenSans";
-  --color-1: #000000;
-  --color-2: #000000;
+  --color-1: #001D3D;
+  --color-2: #0467D5;
   --color-3: #000000;
-  --color-4: #000000;
-  --color-5: #000000;
+  --color-4: #FFC300;
+  --color-5: #001D3D;
   --color-6: #000000;
   --color-7: #000000;
-  --color-8: #000000;
+  --color-8: #FFD54D;
   --color-9: #000000;
-  --color-10: #000000;
+  --color-10: #ffffff;
   --color-11: #000000;
   --color-12: #000000;
   --color-13: #000000;
   --color-14: #000000;
+  /*
+  - Color-1: Primary (CTA)
+  - Color-2: Tiêu đề
+  - Color-3: Mô tả
+  - Color-4: Nền 1
+  - Color-5: Nền 2
+  - Color-6: Nền 3
+  - Color-7: Yếu tố phụ (Đường line, bullet symbol, icon)
+  - Color-8: Tương tác (Hover, Clicked, Drag, Tap, Focus, Pressed...)
+  - Color-9: black
+  - Color-10: white
+  - Color-11: info
+  - Color-12: error
+  - Color-13: success
+  - Color-14: warning
+  Màu sắc (Sử dụng tối đa 14 màu, từ màu 10 - 14: Không thay đổi; các màu còn lại có thể áp dụng với các thành phần khác nhau theo phong cách thiết kế)
+  */
   --fs-1: 6rem;
   --fs-2: 5rem;
   --fs-3: 4rem;
@@ -252,6 +274,81 @@
   border-radius: var(--rounded-10);
 }
 
+.spacing-x-1 {
+  padding: 0.5rem 0;
+}
+.spacing-x-2 {
+  padding: 1rem 0;
+}
+.spacing-x-3 {
+  padding: 1.5rem 0;
+}
+.spacing-x-4 {
+  padding: 2rem 0;
+}
+.spacing-x-5 {
+  padding: 3rem 0;
+}
+.spacing-x-6 {
+  padding: 4rem 0;
+}
+.spacing-x-7 {
+  padding: 5rem 0;
+}
+.spacing-x-8 {
+  padding: 8rem 0;
+}
+
+.spacing-y-1 {
+  padding: 0 0.5rem;
+}
+.spacing-y-2 {
+  padding: 0 1rem;
+}
+.spacing-y-3 {
+  padding: 0 1.5rem;
+}
+.spacing-y-4 {
+  padding: 0 2rem;
+}
+.spacing-y-5 {
+  padding: 0 3rem;
+}
+.spacing-y-6 {
+  padding: 0 4rem;
+}
+.spacing-y-7 {
+  padding: 0 5rem;
+}
+.spacing-y-8 {
+  padding: 0 8rem;
+}
+
+.spacing-xy-1 {
+  padding: 0.5rem;
+}
+.spacing-xy-2 {
+  padding: 1rem;
+}
+.spacing-xy-3 {
+  padding: 1.5rem;
+}
+.spacing-xy-4 {
+  padding: 2rem;
+}
+.spacing-xy-5 {
+  padding: 3rem;
+}
+.spacing-xy-6 {
+  padding: 4rem;
+}
+.spacing-xy-7 {
+  padding: 5rem;
+}
+.spacing-xy-8 {
+  padding: 8rem;
+}
+
 h1.title {
   color: var(--color-1);
   font-size: var(--fs-1);
@@ -296,4 +393,125 @@ h6.title {
   background-color: var(--color-1);
   color: var(--color-2);
   border-color: var(--color-1);
+}
+
+.padding-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  color: var(--color-9);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-8);
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.owl-dot:focus {
+  outline: none;
+}
+
+.owl-next:focus,
+.owl-prev:focus {
+  outline: none;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+
+.owl-carousel {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  background: transparent;
+  border: 0;
+  left: 0;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: transparent;
+  color: #333;
+}
+.owl-carousel .owl-nav button.owl-prev i {
+  background: #fafafa;
+  border: none !important;
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--rounded-circle);
+}
+.owl-carousel .owl-nav button.owl-next {
+  background: transparent;
+  border: 0;
+  right: 0;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-color: transparent;
+  color: #333;
+}
+.owl-carousel .owl-nav button.owl-next i {
+  background: #fafafa;
+  border: none !important;
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--rounded-circle);
+}
+.owl-carousel .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 1.2rem;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.owl-carousel .owl-dots .owl-dot.active span {
+  width: 14px !important;
+  height: 14px !important;
+  background: var(--color-5) !important;
+}
+.owl-carousel .owl-dots .owl-dot span {
+  width: 9px !important;
+  height: 9px !important;
+  margin: 0px 2.5px !important;
+  border: 1px solid var(--color-5) !important;
+  background: transparent !important;
+  transition: all 0.3s ease;
 }
